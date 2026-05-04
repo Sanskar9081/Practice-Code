@@ -1,0 +1,18 @@
+// Check character type (alphabet, digit, special character)
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    char ch;
+    cin >> ch;
+    
+    if(ch>='a' && ch<='z' || ch>='A' && ch<='B'){
+        cout << "Alphabet";
+    } else if(ch>='0' && ch<='9'){
+        cout << "Digit";
+    } else {
+        cout << "special character";
+    }
+    return 0;
+}
