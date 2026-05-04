@@ -1,0 +1,22 @@
+// Profit or Loss calculation
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int selllingprice, costprice;
+    cout << "Selling Price: ";
+    cin >> selllingprice;
+    
+    cout << "Cost Price: ";
+    cin >> costprice;
+    
+    if(selllingprice>costprice){
+        cout << "Profit: " << selllingprice-costprice << endl;
+    } else if(costprice>selllingprice){
+        cout << "Loss: " << costprice-selllingprice << endl;
+    } else {
+        cout << "No Profit. No Loss";
+    }
+    return 0;
+}
