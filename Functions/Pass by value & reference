@@ -1,0 +1,211 @@
+// // // #include <iostream>
+// // // using namespace std;
+
+// // // // // Pass by Value -- copy of the variable
+
+// // // #include <iostream>
+// // // using namespace std;
+
+// // // // pass by value
+// // // void increase(int x){
+// // //     x = x + 5;
+// // //     cout << "Inside function: " << x << endl;
+// // // }
+
+// // // int main(){
+// // //     int a = 10;
+
+// // //     increase(a);
+
+// // //     cout << "Inside main: " << a;
+
+// // //     return 0;
+// // // }
+
+
+// // // // Swap using Pass by Value
+
+// // // #include <iostream>
+// // // using namespace std;
+
+// // // // swap using pass by value
+// // // void swapNum(int a, int b){
+// // //     int temp;
+// // //     temp = a;
+// // //     a = b;
+// // //     b = temp;
+
+// // //     cout << "Inside function: ";
+// // //     cout << a << " " << b << endl;
+// // // }
+
+// // // int main(){
+// // //     int x = 1;
+// // //     int y = 2;
+
+// // //     swapNum(x, y);
+
+// // //     cout << "Inside main: ";
+// // //     cout << x << " " << y;
+
+// // //     return 0;
+// // // }
+
+
+// // // #include <iostream>
+// // // using namespace std;
+
+// // // // pass by reference -- actual variable 
+// // // void increase(int &x){
+// // //     x = x + 5;
+// // //     cout << "Inside function: " << x << endl;
+// // // }
+
+// // // int main(){
+// // //     int a = 10;
+
+// // //     increase(a);
+
+// // //     cout << "Inside main: " << a;
+
+// // //     return 0;
+// // // }
+
+
+// // // #include <iostream>
+// // // using namespace std;
+
+// // // // swap using pass by reference
+// // // void swapNum(int &a, int &b){
+// // //     int temp;
+
+// // //     temp = a;
+// // //     a = b;
+// // //     b = temp;
+
+// // //     cout << "Inside function: ";
+// // //     cout << a << " " << b << endl;
+// // // }
+
+// // // int main(){
+// // //     int x = 1;
+// // //     int y = 2;
+
+// // //     swapNum(x, y);
+
+// // //     cout << "Inside main: ";
+// // //     cout << x << " " << y;
+
+// // //     return 0;
+// // // }
+
+
+
+// // #include <iostream>
+// // using namespace std;
+
+// // // function to double array elements
+// // void doubleArray(int arr[], int n){
+
+// //     for(int i = 0; i < n; i++){
+// //         arr[i] = arr[i] * 2;
+// //     }
+
+// // }
+
+// // int main(){
+
+// //     int arr[5] = {1, 2, 3, 4, 5};
+
+// //     doubleArray(arr, 5);
+
+// //     // print updated array
+// //     for(int i = 0; i < 5; i++){
+// //         cout << arr[i] << " ";
+// //     }
+
+// //     return 0;
+// // }
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// // function to find maximum element
+// int findMax(int arr[], int n){
+
+//     int maxVal = arr[0];
+
+//     for(int i = 1; i < n; i++){
+
+//         if(arr[i] > maxVal){
+//             maxVal = arr[i];
+//         }
+
+//     }
+
+//     return maxVal;
+// }
+
+// int main(){
+
+//     int arr[5] = {2, 8, 1, 15, 6};
+
+//     cout << findMax(arr, 5);
+
+//     return 0;
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// // counter function
+// void increment(int &count){
+//     count++;
+// }
+
+// int main(){
+
+//     int count = 0;
+
+//     increment(count);
+//     cout << count << endl;
+
+//     increment(count);
+//     cout << count << endl;
+
+//     increment(count);
+//     cout << count << endl;
+
+//     return 0;
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// // function returning multiple results
+// void calculate(int a, int b, int &sum, int &product){
+
+//     sum = a + b;
+//     product = a * b;
+
+// }
+
+// int main(){
+
+//     int a = 3;
+//     int b = 4;
+
+//     int sum, product;
+
+//     calculate(a, b, sum, product);
+
+//     cout << "Sum = " << sum << endl;
+//     cout << "Product = " << product;
+
+//     return 0;
+// }
